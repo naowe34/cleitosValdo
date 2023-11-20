@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adivinhe a Palavra</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script src="game_login.js"></script>
+</head>
+<body>
+<h1> joguin das palavra 2</h1>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+	<h3 >jogador 1, entre para jogar o joguin top.</h3>
+	<label >nome de Usuario:</label>
+	<input type="text" id="player1_name_input" class="form-control" placeholder="nome do jogador 1,0">
+	<br>
+</div>
+<br>
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+		<h3 >jogador 2, entre para jogar o joguin top.</h3>
+		<label >nome de Usuario:</label>
+		<input type="text" id="player2_name_input" class="form-control" placeholder="nome do jogador 2,1">
+		
+		<br>
+		<h4 id="player1_name"></h4> <span id="player1_score"></span>
+		<br>
+		<h4 id="player2_name"></h4> <span id="player2_score"></span>
+
+		<div class="container">
+			<center>
+                <h2 style="color: white;">adivinhe a PALARVA </h2>
+				<h3 id="player_question"></h3>
+				<h3 id="player_answer"></h3>
+				<div id="output" class="col-lg-6"> </div>
+				<br>
+				<br>
+				<label>Sua PALARVA: <b style="color: red;">Use uma PALARVA com 5 ou mais letras
+				</b>
+			    </label>
+				<input type="text" id="word" class="form-control" placeholder="Palavra">
+				<br>
+                <button onclick="send()" class="btn btn-success" style="width: 30%;">ENVRIAR</button>
+			</center>
+</div>
+
+<script src="game_page.html"></script>
+</body>
+</html>
